@@ -31,8 +31,15 @@ static NSString * const DEFAULTS_CURRENT_USER_ID_KEY = @"LBUserRepositoryCurrent
 
 @implementation LBUserRepository
 
+  static NSString *_className = @"Hello World";
+
+
++ (void)className: (NSString*) className {
+    _className = className;
+}
+    
 + (instancetype)repository {
-    LBUserRepository *repository = [self repositoryWithClassName:@"users"];
+    LBUserRepository *repository = [self repositoryWithClassName:_className];
     return repository;
 }
 

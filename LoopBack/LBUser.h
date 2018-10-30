@@ -31,7 +31,7 @@
 
 @property (nonatomic, readonly) NSString *currentUserId;
 @property (nonatomic, readonly) LBUser *cachedCurrentUser;
-
++ (void)className: (NSString*) className;
 + (instancetype)repository;
 
 /**
