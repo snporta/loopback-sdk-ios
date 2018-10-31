@@ -31,7 +31,7 @@ static NSString * const DEFAULTS_CURRENT_USER_ID_KEY = @"LBUserRepositoryCurrent
 
 @implementation LBUserRepository
 
-  static NSString *_className = @"Hello World";
+  static NSString *_className = @"users";
 
 
 + (void)className: (NSString*) className {
